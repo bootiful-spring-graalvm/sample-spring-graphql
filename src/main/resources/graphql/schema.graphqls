@@ -1,4 +1,7 @@
 type Query {
+ hello: Greeting
+}
 
- hello: String
+type Greeting {
+ message : String
 }

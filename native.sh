@@ -3,5 +3,4 @@ set -e
 set -u
 set -o pipefail
 
-mvn -DskipTests  -f ../hints/pom.xml spring-javaformat:apply clean install
-mvn -X  -Pnative -DskipTests clean package
+./mvnw -Pnative -DskipTests native:compile
